@@ -77,6 +77,10 @@ span.material-symbols-outlined {
 span.material-symbols-outlined {
     opacity: .3;
 }
+
+h1.temp {
+    margin: 0;
+}
 /*
 span.material-symbols-outlined:hover {
     opacity: .8;
