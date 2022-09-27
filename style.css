@@ -34,7 +34,16 @@ input.search-bar {
     color: white;
     font-family: inherit;
     font-size: 120%;
+    width: calc(100% -100px);
 }
+/* decided not to make serach bar hover since its not clickable
+input.search-bar:hover {
+    background: #7c7c7c6b;
+    opacity: 2;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+*/
 
 button {
     margin: .5em;
@@ -52,3 +61,24 @@ button {
 button:hover {
     background: #7c7c7c6b;
 }
+
+button:hover span.material-symbols-outlined{
+    opacity: 2;
+}
+
+span.material-symbols-outlined {
+    width: 23px;
+    height: 23px;
+    align-content: center;
+    padding-top: 2.5px;
+    padding-right: 1px;
+}
+
+span.material-symbols-outlined {
+    opacity: .3;
+}
+/*
+span.material-symbols-outlined:hover {
+    opacity: .8;
+}
+*/
