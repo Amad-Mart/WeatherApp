@@ -80,8 +80,23 @@ span.material-symbols-outlined {
 
 h1.temp {
     margin: 0;
+    margin-bottom: .4em;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-top: 8px;
+    margin-left: 12px;
 }
 /*
+.icon {
+
+}
+
 span.material-symbols-outlined:hover {
     opacity: .8;
 }
