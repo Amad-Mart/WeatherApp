@@ -13,11 +13,12 @@ let weather = {
     },
     displayWeather: function(data){
         const { name } = data;
+        const { country } = data.sys;
         const { icon, description } = data.weather[0];
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
-        console.log(name, icon, description, temp, humidity, speed);
         document.querySelector('.city').innerText = 'Weather in '+ name;
+        document.querySelector('.country').innerText = ', '+country;
         document.querySelector('.icon').src =
         'https://openweathermap.org/img/wn/'+ icon +'.png';
         document.querySelector('.temp').innerText = temp +'°F' 
@@ -39,6 +40,7 @@ document
 document
     .querySelector('.search-bar')
     .addEventListener('keypress', function(e){
-        if(e.key === 'Enter')
-    weather.search();
+        if(e.key === 'Enter') weather.search();
     });
+
+weather.fetchWeather('Tampa');

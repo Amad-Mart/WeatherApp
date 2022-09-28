@@ -92,6 +92,9 @@ h1.temp {
     margin-top: 8px;
     margin-left: 12px;
 }
+.location-flex {
+    display: flex;
+}
 /*
 .icon {
 
